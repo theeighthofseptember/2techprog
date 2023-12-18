@@ -187,7 +187,7 @@ void Store::Change()
 // метод удаления
 void Store::Delete()
 {
-    // очищаем поток ввода
+    // очищаем поток вводов
     string buf;
     getline(cin, buf);
 
