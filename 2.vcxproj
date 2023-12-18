@@ -128,9 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2.cpp" />
+    <ClCompile Include="Note.cpp" />
+    <ClCompile Include="Storage.cpp" />
     <ClCompile Include="TextScan.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Note.h" />
+    <ClInclude Include="Storage.h" />
     <ClInclude Include="TextScan.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

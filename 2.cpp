@@ -1,6 +1,6 @@
 ﻿#include <iostream>
-//#include "Storage.h"
-//#include "Note.h"
+#include "Storage.h"
+#include "Note.h"
 #include "TextScan.h"
 #include <string>
 
@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    //Store store;  объект, где будут храниться данные
+    Store store;  //объект, где будут храниться данные
 
     // цикл меню
     while (1)
@@ -46,12 +46,12 @@ int main()
             exit(0);
         }
         // проверка выбора пользователя
-        if (choice == "1") { cout << "Ay carramba, el deportato" << endl; exit(0); } //store.FindYear();
-        else if (choice == "2") { cout << "Ay carramba, el deportato" << endl; exit(0); } //store.ExtractField();
-        else if (choice == "3") { cout << "Ay carramba, el deportato" << endl; exit(0); } //store.GetFiel();
-        else if (choice == "4") { cout << "Ay carramba, el deportato" << endl; exit(0); } //store.Set();
-        else if (choice == "5") { cout << "Ay carramba, el deportato" << endl; exit(0); } //store.Change();
-        else if (choice == "6") { cout << "Ay carramba, el deportato" << endl; exit(0); } //store.Delete();
+        if (choice == "1") store.FindYear();
+        else if (choice == "2") store.ExtractField();
+        else if (choice == "3") store.GetFiel();
+        else if (choice == "4") store.Set();
+        else if (choice == "5") store.Change();
+        else if (choice == "6") store.Delete();
         else if (choice == "7") TextScaner();
         else { cout << "Ay carramba, el deportato" << endl; exit(0); }
     }
